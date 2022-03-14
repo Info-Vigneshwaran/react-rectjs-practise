@@ -13,31 +13,35 @@ export default function App() {
   return (
     <div>
       <table>
-        <tr>
-          <td>ID</td>
-          <td>Nam</td>
-          <td>ID</td>
-        </tr>
-        {lists &&
-          lists.map((item) => (
-            <tr key={item.id}>
-              <td>
-                <span>
-                  {item.id} - {item.id}
-                </span>
-              </td>
-              <td>
-                <span>
-                  {item.id} - {item.id}
-                </span>
-              </td>
-              <td>
-                <span>
-                  {item.id} - {item.id}
-                </span>
-              </td>
-            </tr>
-          ))}
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Nam</td>
+            <td>ID</td>
+          </tr>
+        </thead>
+        <tbody>
+          {lists &&
+            lists.map((item) => (
+              <tr key={item.id}>
+                <td>
+                  <span>
+                    {item.id} - {item.id}
+                  </span>
+                </td>
+                <td>
+                  <span>
+                    {item.id} - {item.id}
+                  </span>
+                </td>
+                <td>
+                  <span>
+                    {item.id} - {item.id}
+                  </span>
+                </td>
+              </tr>
+            ))}
+        </tbody>
       </table>
     </div>
   );
